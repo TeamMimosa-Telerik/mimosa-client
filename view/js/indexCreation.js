@@ -32,7 +32,7 @@ function indexCreation() {
     //innerCover
     $innerCover.append($coverHeading)
         .append($('<p class="lead">Code&nbsp;&nbsp;Play&nbsp;&nbsp;Conquer</p>'))
-        .append($('<p class="lead"> <a href="#/category" id="play"class="btn btn-lg btn-default">Play</a> </p>'));
+        .append($('<p class="lead"> <a id="play"class="btn btn-lg btn-default">Play</a> </p>'));
     //innerCover END
 
     // mastHead
