@@ -94,32 +94,13 @@ function questionChanger() {
 
                     alert('Congratulations! You have unlocked a badge!');
 
-                   // Facebook with URL : https://mimosa.herokuapp.com/
-                    window.fbAsyncInit = function() {
-                        FB.init({
-                            appId      : '1625525167728351',
-                            xfbml      : true,
-                            version    : 'v2.4'
-                        });
-                        FB.ui({
-                            method: 'share_open_graph',
-                            action_type: 'og.likes',
-                            action_properties: JSON.stringify({
-                                object:'https://developers.facebook.com/docs/',
-                            })
-                        }, function(response){
-                            // Debug response (optional)
-                            console.log(response);
-                        });
-                    };
+                   // Facebook with URL : https://mimosas.herokuapp.com/
+                    FB.ui(
+                        {
+                            method: 'share',
+                            href: 'https://mimosas.herokuapp.com/'
+                        }, function(response){});
 
-                    (function(d, s, id){
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) {return;}
-                        js = d.createElement(s); js.id = id;
-                        js.src = "//connect.facebook.net/en_US/sdk.js";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));
                     //Facebook END
 
                    // $('#questionHolder').html('<h1>Something to pop up');

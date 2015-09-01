@@ -42,7 +42,25 @@
     <script> Parse.initialize("6V83omVEISgfzl9kIe2ENYxtERBUJ2nlrruGogFs", "nhr3xvaAlRmnVxGiOSyARYLskitpzwdmlUuDCHKC");</script>
 </head>
 <body>
-    
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: '1625525167728351',
+            xfbml: true,
+            version: 'v2.4'
+        });
+
+    };
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+</script>
+
 
     <script src="/js/config.js"></script>
 
