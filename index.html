@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+
+    <script>
+      console.log("AAAAAAAAAAAAAAAAAAAAA");
+      console.log(location.pathname);  // /tmp/test.html
+      console.log(location.hostname);  // localhost
+      console.log(document.URL);       // http://localhost/tmp/test.html?blah=2#foobar
+    </script>  
+
+    <script src="/lib/system.js/dist/system.js"></script>
+    <!-- <script src="../js/tools/router.js"></script> -->
+<!--     <script src="../js/controllers/categoryPageController.js"></script>
+    <script src="../js/controllers/loginPageController.js"></script>
+    <script src="../js/controllers/questionPageController.js"></script> -->
+
+
+    <!-- <script src='../js/app.js'></script> -->
+
+<!--     <script>
+        System.import('../js/app.js');
+        System.import('../lib/handlebars/handlebars.js')
+    </script> -->
+
+
+    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="/css/indexStyles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/nav-css/style.css">
+    <link rel="stylesheet" href="/css/nav-css/reset.css">
+    <link rel="stylesheet" href="/css/nav-css/styles.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+
+    <link href="/css/categoryPageStyles.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/mainGamepageStyles.css" />  <!--tova raboti-->
+
+    <script> Parse.initialize("6V83omVEISgfzl9kIe2ENYxtERBUJ2nlrruGogFs", "nhr3xvaAlRmnVxGiOSyARYLskitpzwdmlUuDCHKC");</script>
+</head>
+<body>
+    
+
+    <script src="/js/config.js"></script>
+
+<!--     <script src="../lib/bootstrap/dist/js/bootstrap.js"></script> -->
+
+
+<!-- <script src="../../controller/loggerController.js"></script> -->
+
+<!-- <script src="../js/mainGamepageCreation.js"></script> -->
+
+<!-- <script src="../js/events/mainGamepageEvents.js"></script> -->
+
+<!-- <script id="questionContent" type="text/x-handlebars-template">
+    <div id="questionHeader">
+        <h2>{{questionText}}</h2>
+    </div>
+    <div id="questioBody">
+        <div id="1" class="percental"><span>{{optionOne}}</span></div>
+        <div id="2" class="percental"><span>{{optionTwo}}</span></div>
+        <br />
+        <div id="3" class="percental"><span>{{optionThree}}</span></div>
+        <div id="4" class="percental"><span>{{optionFour}}</span></div>
+
+    </div>
+</script> -->
+
+
+<script>
+    console.log("index page before System.import");
+    System.import('./js/app.js')
+            .then(function (module) {
+                console.log("index page in promise");
+                module.init();
+            });
+
+</script>
+
+
+
+<!-- <script src="../js/events/toggleNavigation.js"></script> -->
+<!-- <script src="../../model/signup.js"></script>
+<script src="../../model/signin.js"></script>
+<script src="../../model/signout.js"></script> -->
+
+</body>
+</html>

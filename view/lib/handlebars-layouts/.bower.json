@@ -1,0 +1,21 @@
+{
+  "name": "handlebars-layouts",
+  "version": "3.1.0",
+  "description": "Handlebars helpers which implement layout blocks similar to Jade, Jinja, Swig, and Twig.",
+  "main": "dist/handlebars-layouts.js",
+  "ignore": [
+    "/*",
+    "/*/",
+    "!/dist/handlebars-layouts.js"
+  ],
+  "homepage": "https://github.com/shannonmoeller/handlebars-layouts",
+  "_release": "3.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.1.0",
+    "commit": "6a2bdbbe9ebce41e878c9c85b83ea6c2d0334d29"
+  },
+  "_source": "git://github.com/shannonmoeller/handlebars-layouts.git",
+  "_target": "~3.1.0",
+  "_originalSource": "handlebars-layouts"
+}
